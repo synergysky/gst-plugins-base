@@ -534,7 +534,10 @@ libgstriff-1.0.so.0 libgstreamer-plugins-base1.0-0 #MINVER#
  gst_riff_read_chunk@Base 1.0.0
 libgstrtp-1.0.so.0 libgstreamer-plugins-base1.0-0 #MINVER#
 * Build-Depends-Package: libgstreamer-plugins-base1.0-dev
+ gst_buffer_add_rtp_audio_level_meta@Base 1.17.2+20210531pexip-1
  gst_buffer_add_rtp_source_meta@Base 1.16.0
+ gst_buffer_extract_rtp_audio_level_meta_one_byte_ext@Base 1.17.2+20210531pexip-1
+ gst_buffer_get_rtp_audio_level_meta@Base 1.17.2+20210531pexip-1
  gst_buffer_get_rtp_source_meta@Base 1.16.0
  gst_rtcp_buffer_add_packet@Base 1.0.0
  gst_rtcp_buffer_get_first_packet@Base 1.0.0
@@ -570,6 +573,7 @@ libgstrtp-1.0.so.0 libgstreamer-plugins-base1.0-0 #MINVER#
  gst_rtcp_packet_copy_profile_specific_ext@Base 1.10.0
  gst_rtcp_packet_fb_get_fci@Base 1.0.0
  gst_rtcp_packet_fb_get_fci_length@Base 1.0.0
+ gst_rtcp_packet_fb_get_fci_length_bytes@Base 1.17.2+20210531pexip-1
  gst_rtcp_packet_fb_get_media_ssrc@Base 1.0.0
  gst_rtcp_packet_fb_get_sender_ssrc@Base 1.0.0
  gst_rtcp_packet_fb_get_type@Base 1.0.0
@@ -632,6 +636,10 @@ libgstrtp-1.0.so.0 libgstreamer-plugins-base1.0-0 #MINVER#
  gst_rtcpfb_type_get_type@Base 1.6.0
  gst_rtcpsdes_type_get_type@Base 1.6.0
  gst_rtcpxr_type_get_type@Base 1.16.0
+ gst_rtp_audio_level_meta_add_one_byte_ext@Base 1.17.2+20210531pexip-1
+ gst_rtp_audio_level_meta_add_two_byte_ext@Base 1.17.2+20210531pexip-1
+ gst_rtp_audio_level_meta_api_get_type@Base 1.17.2+20210531pexip-1
+ gst_rtp_audio_level_meta_get_info@Base 1.17.2+20210531pexip-1
  gst_rtp_base_audio_payload_flush@Base 1.0.0
  gst_rtp_base_audio_payload_get_adapter@Base 1.0.0
  gst_rtp_base_audio_payload_get_type@Base 1.0.0
@@ -707,6 +715,8 @@ libgstrtp-1.0.so.0 libgstreamer-plugins-base1.0-0 #MINVER#
  gst_rtp_buffer_set_timestamp@Base 1.0.0
  gst_rtp_buffer_set_version@Base 1.0.0
  gst_rtp_buffer_unmap@Base 1.0.0
+ gst_rtp_buffer_video_roi_meta_from_one_byte_ext@Base 1.17.2+20210531pexip-1
+ gst_rtp_buffer_video_roi_meta_to_one_byte_ext@Base 1.17.2+20210531pexip-1
  gst_rtp_hdrext_get_ntp_56@Base 1.2.0
  gst_rtp_hdrext_get_ntp_64@Base 1.2.0
  gst_rtp_hdrext_set_ntp_56@Base 1.2.0
@@ -1131,9 +1141,12 @@ libgstvideo-1.0.so.0 libgstreamer-plugins-base1.0-0 #MINVER#
  gst_buffer_add_video_region_of_interest_meta_id@Base 1.2.0
  gst_buffer_add_video_time_code_meta@Base 1.10.0
  gst_buffer_add_video_time_code_meta_full@Base 1.10.0
+ gst_buffer_add_video_vp8_meta@Base 1.17.2+20210531pexip-1
+ gst_buffer_add_video_vp8_meta_full@Base 1.17.2+20210531pexip-1
  gst_buffer_get_video_meta@Base 1.6.0
  gst_buffer_get_video_meta_id@Base 1.0.0
  gst_buffer_get_video_region_of_interest_meta_id@Base 1.2.0
+ gst_buffer_get_video_vp8_meta@Base 1.17.2+20210531pexip-1
  gst_buffer_pool_config_get_video_alignment@Base 1.0.0
  gst_buffer_pool_config_set_video_alignment@Base 1.0.0
  gst_color_balance_channel_get_type@Base 1.0.0
@@ -1241,6 +1254,7 @@ libgstvideo-1.0.so.0 libgstreamer-plugins-base1.0-0 #MINVER#
  gst_video_color_transfer_decode@Base 1.6.0
  gst_video_color_transfer_encode@Base 1.6.0
  gst_video_color_transfer_from_iso@Base 1.17.2
+ gst_video_color_transfer_is_equivalent@Base 1.17.2+20210531pexip-1
  gst_video_color_transfer_to_iso@Base 1.17.2
  gst_video_colorimetry_from_string@Base 1.0.0
  gst_video_colorimetry_is_equal@Base 1.6.0
@@ -1264,6 +1278,7 @@ libgstvideo-1.0.so.0 libgstreamer-plugins-base1.0-0 #MINVER#
  gst_video_decoder_allocate_output_buffer@Base 1.0.0
  gst_video_decoder_allocate_output_frame@Base 1.0.0
  gst_video_decoder_allocate_output_frame_with_params@Base 1.12.0
+ gst_video_decoder_clear_decode_error@Base 1.17.2+20210531pexip-1
  gst_video_decoder_drop_frame@Base 1.0.0
  gst_video_decoder_finish_frame@Base 1.0.0
  gst_video_decoder_get_allocator@Base 1.0.0
@@ -1286,6 +1301,8 @@ libgstvideo-1.0.so.0 libgstreamer-plugins-base1.0-0 #MINVER#
  gst_video_decoder_negotiate@Base 1.0.0
  gst_video_decoder_proxy_getcaps@Base 1.6.0
  gst_video_decoder_release_frame@Base 1.2.2
+ gst_video_decoder_report_decode_error@Base 1.17.2+20210531pexip-1
+ gst_video_decoder_set_drop_error_frames_early@Base 1.17.2+20210531pexip-1
  gst_video_decoder_set_estimate_rate@Base 1.0.0
  gst_video_decoder_set_interlaced_output_state@Base 1.16.0
  gst_video_decoder_set_latency@Base 1.0.0
@@ -1519,3 +1536,5 @@ libgstvideo-1.0.so.0 libgstreamer-plugins-base1.0-0 #MINVER#
  gst_video_vbi_parser_get_type@Base 1.16.0
  gst_video_vbi_parser_new@Base 1.16.0
  gst_video_vbi_parser_result_get_type@Base 1.16.0
+ gst_video_vp8_meta_api_get_type@Base 1.17.2+20210531pexip-1
+ gst_video_vp8_meta_get_info@Base 1.17.2+20210531pexip-1

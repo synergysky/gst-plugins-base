@@ -7,7 +7,7 @@ index 13fd5d485..6f9f9f10b 100644
  ]
  
 -opus_dep = dependency('opus-avx', version : '>= 0.9.4', required : get_option('opus'), static : true)
-+opus_dep = dependency('opus', version : '>= 0.9.4', required : get_option('opus'), static : true)
++opus_dep = dependency('opus', version : '>= 0.9.4', required : get_option('opus'), static : false)
  
  if opus_dep.found()
    gstopus = library('gstopus',
